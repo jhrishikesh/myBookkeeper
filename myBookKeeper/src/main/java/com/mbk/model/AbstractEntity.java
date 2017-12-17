@@ -7,6 +7,7 @@ package com.mbk.model;
 import java.io.Serializable;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 import lombok.Getter;
 
 /**
@@ -17,6 +18,7 @@ import lombok.Getter;
  * @author hrishi
  *
  */
+@MappedSuperclass
 public abstract class AbstractEntity implements Serializable {
 
   private static final long serialVersionUID = 2611065946454999464L;
